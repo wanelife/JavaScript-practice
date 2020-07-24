@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		111
+		222
+	</div>
+	<script type="text/javascript">
+	function open(){
+		console.log(1);
+	}
+	open();
+	function printFibonacci(n){
+		var arr = n >0? [1] : [];
+		if(n>1){
+			for(let index = 1;index < n ;index++){
+				arr.push(arr[index - 1] + (index >= 2 ? arr[index - 2] : 0))
+			}
+			return arr;
+
+		}
+		
+	}
+	console.log(printFibonacci(20));
+	</script>
+	
+</body>
+</html>
