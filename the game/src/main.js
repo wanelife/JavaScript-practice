@@ -7,6 +7,8 @@ import VueLazyload from 'vue-lazyload'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import Vant from 'vant'
+import 'vant/lib/index.css';
 
 import './mock/mockServer' // 加载mockServer即可
 import loading from './common/imgs/loading.gif'
@@ -17,6 +19,7 @@ Vue.component(Button.name, Button)  // <mt-button>
 Vue.use(VueLazyload, { // 内部自定义一个指令lazy
   loading
 })
+Vue.use(Vant)
 
 new Vue({
   el: '#app',

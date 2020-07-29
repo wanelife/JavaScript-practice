@@ -10,11 +10,38 @@
             {{item}}
           </span>
         </nav>
-   
-      </div>    
+      </div>         
     </div>
     <div class="search">
       <i class="iconfont icon-search"></i>
+    </div>
+    <div>
+      <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white"  >
+        <van-swipe-item><van-image
+          alt="111"
+          width="300"
+          height="150"
+          src="http://i-4.yxdown.com/2020/6/17/90f5db59-4679-454b-81bd-1ed203628b8a.jpg"
+        /></van-swipe-item>
+        <van-swipe-item><van-image
+          alt="222"
+          width="300"
+          height="150"
+          src="http://i-4.yxdown.com/2020/6/17/c5b2b731-4dc1-4dc4-8aed-af69a717a1f4.jpg"
+        /></van-swipe-item>
+        <van-swipe-item><van-image
+          alt="333"
+          width="300"
+          height="150"
+          src="http://i-4.yxdown.com/2020/6/17/e478ffa4-2c7d-4a5e-b4b0-919780b639a4.jpg"
+        /></van-swipe-item>
+        <van-swipe-item><van-image
+          alt="444"
+          width="300"
+          height="150"
+          src="http://i-4.yxdown.com/2019/9/19/KDEyMHgxMjAp/011f505c-fa69-4df8-aa75-d983d47eda79.png"
+        /></van-swipe-item>
+      </van-swipe>
     </div>
   
     
@@ -94,6 +121,9 @@ span {
 .iconfont{
   font-size: 25px;
 }
-          
+.my-swipe .van-swipe-item {
+    text-align: center;
+  }
+        
   
 </style>
